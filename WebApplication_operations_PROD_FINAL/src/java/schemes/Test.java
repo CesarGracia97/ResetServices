@@ -182,13 +182,13 @@ public class Test {
             host_ems = "192.168.21.152";
             if (objeto.equals("www")) {
                 user = "fsmwww";
-                password = "fsmwww123456";
+                password = "fsmwww";
             } else if (objeto.equals("mobile")) {
                 user = "fsmmobile";
-                password = "fsmmobile123456";
+                password = "fsmmobile";
             } else if (objeto.equals("api")) {
                 user = "fsmapi";
-                password = "fsmapi123456";
+                password = "fsmapi";
             } else if (objeto.equals("queue")) {
                 user = "fsmqueue";
                 password = "fsmqueue";
@@ -200,10 +200,10 @@ public class Test {
             if (objeto.contains("todos")) {
                 if (accion.contains("status")) {
 //                    String jbossEms = commandResp.getIdProcess("root", host_ems, "cable12", "pgrep -fl [j]ava|grep " + ruta_ems + " |cut -d\" \" -f -1");
-                    String tomMob = commandResp.getIdProcess("fsmmobile", host, "fsmmobile123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile/ |cut -d\" \" -f -1");
-                    String tomWww = commandResp.getIdProcess("fsmwww", host, "fsmwww123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww/ |cut -d\" \" -f -1");
+                    String tomMob = commandResp.getIdProcess("fsmmobile", host, "fsmmobile", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile/ |cut -d\" \" -f -1");
+                    String tomWww = commandResp.getIdProcess("fsmwww", host, "fsmwww", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww/ |cut -d\" \" -f -1");
                     String tomQue = commandResp.getIdProcess("fsmqueue", host, "fsmqueue", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmqueue/ |cut -d\" \" -f -1");
-                    String tomApi = commandResp.getIdProcess("fsmapi", host, "fsmapi123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi/ |cut -d\" \" -f -1");
+                    String tomApi = commandResp.getIdProcess("fsmapi", host, "fsmapi", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi/ |cut -d\" \" -f -1");
                     //System.out.println("IDs_FSM:\nEMS:" + jbossEms + "\nMOBILE:" + tomMob + "\nWWW:" + tomWww + "\nQUEUE:" + tomQue + "\nAPI:" + tomApi);
                     Applicationstasks.info(Test.class.getName() + " - WSuser= " + WSuser + " Resultado del STATES: " + Resultado);
                     Resultado = "ALL###";
@@ -247,13 +247,13 @@ public class Test {
                     for (int op = 0; op < stop.length; op++) {
                         if (stop[op].equals("www")) {
                             user = "fsmwww";
-                            password = "fsmwww123456";
+                            password = "fsmwww";
                         } else if (stop[op].equals("mobile")) {
                             user = "fsmmobile";
-                            password = "fsmmobile123456";
+                            password = "fsmmobile";
                         } else if (stop[op].equals("api")) {
                             user = "fsmapi";
-                            password = "fsmapi123456";
+                            password = "fsmapi";
                         } else if (stop[op].equals("queue")) {
                             user = "fsmqueue";
                             password = "fsmqueue";
@@ -280,13 +280,13 @@ public class Test {
                     for (int op = 0; op < stop.length; op++) {
                         if (stop[op].equals("www")) {
                             user = "fsmwww";
-                            password = "fsmwww123456";
+                            password = "fsmwww";
                         } else if (stop[op].equals("mobile")) {
                             user = "fsmmobile";
-                            password = "fsmmobile123456";
+                            password = "fsmmobile";
                         } else if (stop[op].equals("api")) {
                             user = "fsmapi";
-                            password = "fsmapi123456";
+                            password = "fsmapi";
                         } else if (stop[op].equals("queue")) {
                             user = "fsmqueue";
                             password = "fsmqueue";
@@ -331,13 +331,13 @@ public class Test {
                     if (accion.equals("start")) {
                         if (objeto.equals("www")) {
                             user = "fsmwww";
-                            password = "fsmwww123456";
+                            password = "fsmwww";
                         } else if (objeto.equals("mobile")) {
                             user = "fsmmobile";
-                            password = "fsmmobile123456";
+                            password = "fsmmobile";
                         } else if (objeto.equals("api")) {
                             user = "fsmapi";
-                            password = "fsmapi123456";
+                            password = "fsmapi";
                         } else if (user.equals("queue")) {
                             user = "fsmqueue";
                             password = "fsmqueue";
