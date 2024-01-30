@@ -277,6 +277,7 @@
             <!-- end #wrapper2 -->
             <div id="footer">
                 <p><img src="images/footer.gif"/></br>Sistema de control de Apps - Titan </br>(c) Xtrim TVCABLE</p>
+                <p>Ultima Actualizacion (30/01/24)</p>
             </div>
         </div>
         <!-- end #wrapper -->

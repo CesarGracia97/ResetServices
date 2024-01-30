@@ -181,17 +181,17 @@ public class Test {
             host = "192.168.21.187";
             host_ems = "192.168.21.152";
             if (objeto.equals("www")) {
-                user = "rootfsmwww";
-                password = "cable12fsmwww123456";
+                user = "fsmwww";
+                password = "fsmwww";
             } else if (objeto.equals("mobile")) {
-                user = "rootfsmmobile";
-                password = "cable12fsmmobile123456";
+                user = "fsmmobile";
+                password = "fsmmobile";
             } else if (objeto.equals("api")) {
                 user = "rootfsmapi";
-                password = "cable12fsmapi123456";
+                password = "fsmapi";
             } else if (objeto.equals("queue")) {
-                user = "rootfsmqueue";
-                password = "cable12fsmqueue";
+                user = "fsmqueue";
+                password = "fsmqueue";
             } 
 //            else if (objeto.equals("Ems")) {
 //                user = "root";
@@ -200,10 +200,10 @@ public class Test {
             if (objeto.contains("todos")) {
                 if (accion.contains("status")) {
 //                    }String jbossEms = commandResp.getIdProcess("root", host_ems, "cable12", "pgrep -fl [j]ava|grep " + ruta_ems + " |cut -d\" \" -f -1");
-                    String tomWww = commandResp.getIdProcess("Test","rootfsmwww", host, "cable12fsmwww123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww/ |cut -d\" \" -f -1");
-                    String tomMob = commandResp.getIdProcess("Test","rootfsmmobile", host, "cable12fsmmobile123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile/ |cut -d\" \" -f -1");
-                    String tomQue = commandResp.getIdProcess("Test","rootfsmqueue", host, "cable12fsmqueue", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmqueue/ |cut -d\" \" -f -1");
-                    String tomApi = commandResp.getIdProcess("Test","rootfsmapi", host, "cable12fsmapi123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi/ |cut -d\" \" -f -1");
+                    String tomWww = commandResp.getIdProcess("Test","fsmwww", host, "fsmwww123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww |cut -d\" \" -f -1");
+                    String tomMob = commandResp.getIdProcess("Test","fsmmobile", host, "fsmmobile123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile |cut -d\" \" -f -1");
+                    String tomQue = commandResp.getIdProcess("Test","fsmqueue", host, "fsmqueue", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmqueue |cut -d\" \" -f -1");
+                    String tomApi = commandResp.getIdProcess("Test","fsmapi", host, "fsmapi123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi |cut -d\" \" -f -1");
                     //System.out.println("IDs_FSM:\nEMS:" + jbossEms + "\nMOBILE:" + tomMob + "\nWWW:" + tomWww + "\nQUEUE:" + tomQue + "\nAPI:" + tomApi);
                     Applicationstasks.info(Test.class.getName() + " - WSuser= " + WSuser + " Resultado del STATES: " + Resultado);
                     Resultado = "ALL###";

@@ -223,10 +223,10 @@ public class Desarrollo {
                 if (accion.contains("status")) {
                     //String jbossEms = commandResp.getIdProcess("root", host_ems, "cable12", "pgrep -fl [j]ava|grep " + ruta_ems + " |cut -d\" \" -f -1");
 
-                    String tomMob = commandResp.getIdProcess("Desarrollo","fsmmobile", host, "fsmmobile", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile/ |cut -d\" \" -f -1");
-                    String tomWww = commandResp.getIdProcess("Desarrollo","fsmwww", host, "fsmwww", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww/ |cut -d\" \" -f -1");
-                    String tomQue = commandResp.getIdProcess("Desarrollo","fsmqueue", host, "fsmqueue", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmqueue/ |cut -d\" \" -f -1");
-                    String tomApi = commandResp.getIdProcess("Desarrollo","fsmapi", host, "fsmapi", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi/ |cut -d\" \" -f -1");
+                    String tomMob = commandResp.getIdProcess("Desarrollo","fsmmobile", host, "fsmmobile123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmmobile |cut -d\" \" -f -1");
+                    String tomWww = commandResp.getIdProcess("Desarrollo","fsmwww", host, "fsmwww123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmwww |cut -d\" \" -f -1");
+                    String tomQue = commandResp.getIdProcess("Desarrollo","fsmqueue11g", host, "fsmqueue11g", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmqueue |cut -d\" \" -f -1");
+                    String tomApi = commandResp.getIdProcess("Desarrollo","fsmapi", host, "fsmapi123456", "pgrep -fl [j]ava|grep " + ruta_toms + "fsmapi |cut -d\" \" -f -1");
                     //                   System.out.println("IDs_FSM:\nEMS:" + jbossEms + "\nMOBILE:" + tomMob + "\nWWW:" + tomWww + "\nQUEUE:" + tomQue + "\nAPI:" + tomApi);
                     Applicationstasks.info(Desarrollo.class.getName() + " - WSuser= " + WSuser + " IDs_FSM: MOBILE:" + tomMob + " WWW:" + tomWww + " QUEUE:" + tomQue + " API:" + tomApi);
                     //Applicationstasks.info(Desarrollo.class.getName() + " - WSuser= " + WSuser + " IDs_FSM: EMS:" + jbossEms + " MOBILE:" + tomMob + " WWW:" + tomWww + " QUEUE:" + tomQue + " API:" + tomApi);
